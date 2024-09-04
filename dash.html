@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<link rel="shortcut icon" type="x-icon" href="Images/KKKs-Logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triple K's Kitchen</title>
+    <!-- font awesome cdn  -->
+  <script src="https://kit.fontawesome.com/46b7ceee20.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://kit.fontawesome.com/61003df5a9.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="site.css">
+
+
+<style>
+		.share-button {
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px;
+			border-radius: 14px;
+			cursor: pointer;
+			display: inline-block;
+			margin-bottom: 10px;
+			margin-left: 10%;
+			margin-top: 12px;
+		}
+
+		.social-platforms {
+			display: none;
+		}
+
+		.social-platforms.show {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 10px;
+			padding-bottom: 10px;
+			margin-right: 5px;
+		}
+
+		.social-platforms a {
+			margin: 8px;
+			color: blue;
+			font-size: 30px;
+		}
+	</style>
+	<script>
+		function showSocialPlatforms() {
+			const socialPlatforms = document.querySelector('.social-platforms');
+			socialPlatforms.classList.toggle('show');
+		}
+
+		function shareLink(platform) {
+			var linkToShare = "https://avatar-pluga.netlify.app/index.html"; // Replace with your link to share
+			var socialUrl;
+
+			if (platform === 'facebook') {
+				socialUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(linkToShare);
+			} else if (platform === 'instagram') {
+				socialUrl = 'https://www.instagram.com/share?url=' + encodeURIComponent(linkToShare);
+			} else if (platform === 'email') {
+				socialUrl = 'mailto:?body=' + encodeURIComponent(linkToShare);
+			} else if (platform === 'whatsapp') {
+				socialUrl = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(linkToShare);
+			}
+
+			window.open(socialUrl, '_blank');
+		}
+	</script>
+
+
+
+</head>
+<body>
+    <!-- home page  -->
+    <div class="home-page">
+        <!-- header section  -->
+        <div class="header-section">
+            <!-- header logo  -->
+            <div class="logo">
+                <img src="Images/KKKs-Logo.png" style="width: 90px; height: auto; margin-bottom: 50px; border-radius: 9px" alt="">
+            </div>
+
+            <!-- header navigation  -->
+            <div class="header-nav">
+                <div class="mobile-nav-bar">
+                    <i class="fa-solid fa-bars" id="mobile-nav-bar-icon"></i>
+                </div>
+                <ul class="header-nav-list" id="header-nav-list">
+
+                    <li class="header-nav-tab">
+                        <a href="index.html" >Home</a>
+                    </li >
+                    <li class="header-nav-tab">
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="header-nav-tab">
+                        <a href="selling.html">Catering Services</a>
+                    </li>
+										<li class="header-nav-tab">
+                        <a href="selling2.html">Kitchen Menu</a>
+                    </li>
+										<li class="header-nav-tab">
+	                        <a href="gallery.html" >Gallery</a>
+	                    </li >
+                    <li class="header-nav-tab">
+                        <a href="contact.html" >Contacts Us</a>
+                    </li >
+
+                    <span class="highlight"></span>
+                </ul>
+
+
+            </div>
+        </div>
+        <!-- hero section  -->
+        <div class="hero-section" style="margin-bottom: 5px; background-color: white; border-radius: 10px">
+            <!-- hero content section  -->
+            <div class="hero-content">
+                <div class="content-header">
+                    <h1 style="background-color: white; border-radius: 10px;">"Where Culinary Excellence Meets Kasi Flavor!"</h1>
+                    <p style="background-color: white; border-radius: 2px; margin-left: 10px; margin-right: 10px;">We Serve Mouth Watering Dishes at our kitchen & Also Provide Catering Services For All Events, Trips, Funerals, Ceremonies, Celebrations & Meetings.
+                    	</p>
+
+                <div>
+                <img style="margin-left: 15%;" src="Products/Product (1).jpg" alt="">
+                </div>
+
+
+
+<div style="background-color: red;" class="share-button" onclick="window.location.href='selling.html';"><i class="fas fa-order"></i>Book For Catering</div>
+<div style="background-color: orange; margin-left: 3px;" class="share-button" onclick="window.location.href='selling2.html';"><i class="fas fa-order"></i>Kitchen Menu</div>
+<div style="margin-left: 6px;" class="share-button" onclick="showSocialPlatforms()"><i class="fas fa-share"></i>Share</div>
+
+
+<!-- Insert site/plug sharing links -->
+    <div class="social-platforms">
+        <a href="https://triplekskitchen.co.za/index.html" onclick="shareLink('facebook')"><i class="fab fa-facebook" style="color: blue; font-size: 70px;"></i></a>
+        <a href="https://triplekskitchen.co.za/index.html" onclick="shareLink('instagram')"><i class="fab fa-instagram" style="color: purple; font-size: 70px;"></i></a>
+        <a href="https://triplekskitchen.co.za/index.html" onclick="shareLink('email')"><i class="fas fa-envelope" style="color: red; font-size: 70px;"></i></a>
+        <a href="https://triplekskitchen.co.za/index.html" onclick="shareLink('whatsapp')"><i class="fab fa-whatsapp" style="color: green; font-size: 70px;"></i></a>
+    </div>
+
+
+
+<div class="testimonials">
+
+<div class="inner">
+
+<h2 style="background-color: transparent;">Testimonials</h2>
+<div class="border"></div>
+
+<div class="row">
+    <div class="col">
+        <div class="testimonial">
+            <img src="Products/Product (1).jpg" alt="">
+            <div class="name">Name & Surname</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+
+            <p>
+                Wow what great service delivery! No one went home with an empty stomach and everyone really loved the food. Even today people are still talking about how good the food was.
+            </p>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col">
+        <div class="testimonial">
+            <img src="Products/Product (1).jpg" alt="">
+            <div class="name">Name & Surname</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+
+            <p>
+                No, when ever we do something, i'm calling these people back again.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col">
+        <div class="testimonial">
+            <img src="Products/Product (1).jpg" alt="">
+            <div class="name">Name & Surname</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+
+            <p>
+                It was a sad day for us and the rest of the family as we were lay our father to his final resting place, and these people took care of everything on the food side to the point that we even forgot that we hired them and felt like they were family.
+            </p>
+          </div>
+        </div>
+
+
+
+
+	<footer>
+<div class="outer-footer">
+  <div class="widget links">
+                    <ul class="style2">
+                       <li><a href="https://www.termsfeed.com/live/1ab1c651-5b25-43e4-8812-d7e8658a1dd3" style="color: black;">Privacy Policy</a></li>
+                      <li><a href="https://www.termsfeed.com/live/07228ddf-8948-43c8-8992-679d5a7536e2" style="color: black;">terms</a></li>
+                    </ul>
+                  </div>
+<footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3 style="background-color: transparent;">Triple K's Kitchen</span></h3>
+
+						<p style="background-color: transparent;" class="footer-links">
+								<a href="index.html">Home</a>
+								|
+								<a href="selling.html">Catering Services</a>
+								|
+							 <a href="selling2.html">Our Kitchen Menu</a>
+								|
+								<a href="contact.html">Contact Us</a>
+						</p>
+
+								<p style="background-color: transparent;" class="footer-company-name">Copyright © 2024 Triple K's Kitchen. website by  <strong><a href="https://www.blossomvelder.co.za/">Blossom Velder (pty) Ltd</a>.</strong> All rights reserved</p>
+        </div>
+
+        <div  style="background-color: transparent;" class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p style="background-color: transparent;"><span>Mpumalanga<br>MzintiTrust<br>Stand No.88<br>1352<br>South Africa</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p style="background-color: transparent;">076 262 8295</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p style="background-color: transparent;"><a href="mailto:khayakazikirsty@gmail.com">khayakazikirsty@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p style="background-color: transparent;" class="footer-company-about">
+                <span>About Us</span>
+                <strong>Triple K's Kitchen</strong>...Where Culinary Excellence Meets Kasi Flavor! We Serve Mouth Watering Dishes & Provide Catering Services For All Events, Trips, Funerals, Ceremonies, Celebrations & Meetings.
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/profile.php?id=100006292925166&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+<script src="site.js"></script>
+<script src="dash.js"></script>
+</body>
+</html>
